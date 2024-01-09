@@ -1,0 +1,563 @@
+body
+{
+    margin: 0%;
+    
+    background-color: black;
+}
+
+
+.main-div
+{
+    display: flex;
+flex-wrap: wrap;
+height: 400px;
+border: 1px solid black;
+}
+
+.col-lg-1
+{
+  border: 1px solid white;
+}
+
+.top-div
+{
+  border: 2px solid whitesmoke;
+}
+
+
+
+
+
+/* sidebar css */
+
+
+.sidebar
+{
+  background-color: black;
+  padding: 5px;
+
+}
+
+/* sidebar buttons css */
+
+/* home button */
+.btn-flip-home {
+  margin-left: 42px;
+  margin-top: 23px;
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+.btn-flip-home:hover:after {
+  opacity: 1;
+  transform: translateX(0) rotateY(0); /* Flipping from right to left on hover */
+  scale: 1.1;
+  transition: 500ms;
+}
+
+.btn-flip-home:hover:before {
+  opacity: 0;
+  transform: translateX(100%) rotateY(-180deg); /* Hide front while flipping from right to left on hover */
+}
+
+.btn-flip-home:after {
+  width: 59px;
+    height: 56px;
+    top: 0;
+    left: -25px;
+    padding: 0px;
+    padding-top: 10px;
+    opacity: 0;
+    color: black;
+    font-size: 15px;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: yellow;
+    content: attr(data-back);
+    transform: translateX(-100%) rotateY(180deg);
+    border-radius: 50%;
+    font-weight: bolder;
+    
+}
+
+.btn-flip-home:before {
+  content: "\f015";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bolder;
+  width: 59px;
+  height: 56px;
+  top: 0;
+  left: -24px;
+  opacity: 1;
+  color: whitesmoke;
+  display: block;
+  padding: 0px;
+  padding-top: 8px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: rgb(37, 35, 35);
+  transform: translateX(0) rotateY(0);
+  border-radius: 50%;
+  
+}
+
+/* about button */
+.btn-flip-about {
+  margin-left: 42px;
+  margin-top: 23px;
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+.btn-flip-about:hover:after {
+  opacity: 1;
+  transform: translateX(0) rotateY(0); /* Flipping from right to left on hover */
+  scale: 1.1;
+  transition: 500ms;
+}
+
+.btn-flip-about:hover:before {
+  opacity: 0;
+  transform: translateX(100%) rotateY(-180deg); /* Hide front while flipping from right to left on hover */
+}
+
+.btn-flip-about:after {
+  width: 59px;
+    height: 56px;
+    top: 0;
+    left: -25px;
+    padding: 0px;
+    padding-top: 10px;
+    opacity: 0;
+    color: black;
+    font-size: 15px;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: yellow;
+    content: attr(data-back);
+    transform: translateX(-100%) rotateY(180deg);
+    border-radius: 50%;
+    font-weight: bolder;
+    
+}
+
+.btn-flip-about:before {
+  content: "\f007";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bolder;
+  width: 59px;
+  height: 56px;
+  top: 0;
+  left: -24px;
+  opacity: 1;
+  color: whitesmoke;
+  display: block;
+  padding: 0px;
+  padding-top: 8px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: rgb(37, 35, 35);
+  transform: translateX(0) rotateY(0);
+  border-radius: 50%;
+  
+}
+
+
+/* Portfolio button */
+.btn-flip-port {
+  margin-left: 42px;
+  margin-top: 23px;
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+.btn-flip-port:hover:after {
+  opacity: 1;
+  transform: translateX(0) rotateY(0); /* Flipping from right to left on hover */
+  scale: 1.1;
+  transition: 500ms;
+}
+
+.btn-flip-port:hover:before {
+  opacity: 0;
+  transform: translateX(100%) rotateY(-180deg); /* Hide front while flipping from right to left on hover */
+}
+
+.btn-flip-port:after {
+  width: 59px;
+    height: 56px;
+    top: 0;
+    left: -25px;
+    padding: 0px;
+    padding-top: 10px;
+    opacity: 0;
+    color: black;
+    font-size: 8px;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: yellow;
+    content: attr(data-back);
+    transform: translateX(-100%) rotateY(180deg);
+    border-radius: 50%;
+    font-weight: bolder;
+    
+}
+
+.btn-flip-port:before {
+  content: "\f0b1";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bolder;
+  width: 59px;
+  height: 56px;
+  top: 0;
+  left: -24px;
+  opacity: 1;
+  color: whitesmoke;
+  display: block;
+  padding: 0px;
+  padding-top: 8px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: rgb(37, 35, 35);
+  transform: translateX(0) rotateY(0);
+  border-radius: 50%;
+  
+}
+
+/* Contact button */
+.btn-flip-cont {
+  margin-left: 27px;
+  margin-top: 10px;
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+.btn-flip-cont:hover:after {
+  opacity: 1;
+  transform: translateX(0) rotateY(0); /* Flipping from right to left on hover */
+  scale: 1.1;
+  transition: 500ms;
+}
+
+.btn-flip-cont:hover:before {
+  opacity: 0;
+  transform: translateX(100%) rotateY(-180deg); /* Hide front while flipping from right to left on hover */
+}
+
+.btn-flip-cont:after {
+  width: 59px;
+    height: 56px;
+    top: 0;
+    left: -25px;
+    padding: 0px;
+    padding-top: 10px;
+    opacity: 0;
+    color: black;
+    font-size: 11px;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: yellow;
+    content: attr(data-back);
+    transform: translateX(-100%) rotateY(180deg);
+    border-radius: 50%;
+    font-weight: bolder;
+}
+
+.btn-flip-cont:before {
+  content: "\f2b6";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bolder;
+  width: 59px;
+  height: 56px;
+  top: 0;
+  left: -24px;
+  opacity: 1;
+  color: whitesmoke;
+  display: block;
+  padding: 0px;
+  padding-top: 8px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: rgb(37, 35, 35);
+  transform: translateX(0) rotateY(0);
+  border-radius: 50%;
+  
+}
+
+
+/* Blog button */
+.btn-flip-blog {
+  margin-left: 27px;
+  margin-top: 10px;
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+.btn-flip-blog:hover:after {
+  opacity: 1;
+  transform: translateX(0) rotateY(0); /* Flipping from right to left on hover */
+  scale: 1.1;
+  transition: 500ms;
+}
+
+.btn-flip-blog:hover:before {
+  opacity: 0;
+  transform: translateX(100%) rotateY(-180deg); /* Hide front while flipping from right to left on hover */
+}
+
+.btn-flip-blog:after {
+  width: 59px;
+    height: 56px;
+    top: 0;
+    left: -25px;
+    padding: 0px;
+    padding-top: 10px;
+    opacity: 0;
+    color: black;
+    font-size: 15px;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: yellow;
+    content: attr(data-back);
+    transform: translateX(-100%) rotateY(180deg);
+    border-radius: 50%;
+    font-weight: bolder;
+    
+}
+
+.btn-flip-blog:before {
+  content: "\f27a";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bolder;
+  width: 59px;
+  height: 56px;
+  top: 0;
+  left: -24px;
+  opacity: 1;
+  color: whitesmoke;
+  display: block;
+  padding: 0px;
+  padding-top: 8px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: rgb(37, 35, 35);
+  transform: translateX(0) rotateY(0);
+  border-radius: 50%;
+  
+}
+
+
+
+
+
+.light-btn
+{
+  border-radius: 50%;
+  height: 57px;
+  width: 62px;
+  margin-left: 27px;
+  background-color:rgb(152, 148, 148) ;
+  border: 1px solid rgb(37, 35, 35);
+  color: whitesmoke;
+  font-weight: bolder;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media queries */
+
+@media (min-width: 992px)
+{
+.col-lg-11 {
+    flex: 0 0 auto;
+    width: 80.666667%;
+}
+}

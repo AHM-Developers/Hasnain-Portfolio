@@ -1,0 +1,986 @@
+body
+{
+    margin: 0%;
+}
+.main-div
+{
+    display: flex;
+}
+
+
+
+
+.color-div
+{
+    background-color: yellow;
+height: 703px;
+
+
+
+
+}
+
+.content-div
+{
+    background-color: black;
+    height: 703px;
+    border-left: 122px solid yellow;
+    border-bottom: 336px solid black;
+    margin-left: 0px;
+    border-top: 100px;
+display: flex;
+
+}
+/* 
+@-webkit-keyframes typing { from { width: 0; } }
+@-webkit-keyframes blink-caret { 50% { border-color: transparent; } }
+
+.typing-animated-txt { 
+	font: bold 300% Consolas, Monaco, monospace;
+	border-right: .1em solid black;
+	width: 16.5em; 
+	width: 25ch;
+	margin: 2em 1em;
+	white-space: nowrap;
+	overflow: hidden;
+	-webkit-animation: typing 3s steps(21, end),
+	           blink-caret .5s step-end infinite alternate;
+}
+ */
+
+
+
+
+
+
+.profile
+{       
+ height: 450px;
+    border: 1px solid white;
+    width: 348px;
+    position: relative;
+    left: -299px;
+    top: 65px;
+    /* margin-top: 59px; */
+    background-color: black;
+    box-shadow: black 0px 0px 6px 6px;
+    border-radius: 15px;
+}
+.profile-pic
+{
+    height: 456px;
+    width: 330px; 
+
+}
+.content-txt
+{
+  height: 253px;
+  margin-left: -206px;
+  margin-top: 131px;
+}
+#name
+{
+  color: gold;
+  font-weight: 900;
+  font-size: 55px;
+  
+}
+
+#prof
+{
+  color: whitesmoke;
+  font-weight: 700;
+  font-size: 50px;
+  font-family: Nunito;
+  margin-left: 33px;
+
+
+}
+
+#bio
+{
+  color: whitesmoke;
+  font-family: Avenir;
+  word-spacing: 2px;
+  max-width: 702px;
+  font-size: 18px;
+
+
+}
+
+.sidebar
+{
+  background-color: black;
+  padding: 5px;
+
+}
+
+/* sidebar buttons css */
+
+/* home button */
+.btn-flip-home {
+  margin-left: 27px;
+  margin-top: 10px;
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+.btn-flip-home:hover:after {
+  opacity: 1;
+  transform: translateX(0) rotateY(0); /* Flipping from right to left on hover */
+  scale: 1.1;
+  transition: 500ms;
+}
+
+.btn-flip-home:hover:before {
+  opacity: 0;
+  transform: translateX(100%) rotateY(-180deg); /* Hide front while flipping from right to left on hover */
+}
+
+.btn-flip-home:after {
+  width: 59px;
+    height: 56px;
+    top: 0;
+    left: -25px;
+    padding: 0px;
+    padding-top: 10px;
+    opacity: 0;
+    color: black;
+    font-size: 15px;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: yellow;
+    content: attr(data-back);
+    transform: translateX(-100%) rotateY(180deg);
+    border-radius: 50%;
+    font-weight: bolder;
+    
+}
+
+.btn-flip-home:before {
+  content: "\f015";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bolder;
+  width: 59px;
+  height: 56px;
+  top: 0;
+  left: -24px;
+  opacity: 1;
+  color: whitesmoke;
+  display: block;
+  padding: 0px;
+  padding-top: 8px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: rgb(37, 35, 35);
+  transform: translateX(0) rotateY(0);
+  border-radius: 50%;
+  
+}
+
+/* about button */
+.btn-flip-about {
+  margin-left: 27px;
+  margin-top: 10px;
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+.btn-flip-about:hover:after {
+  opacity: 1;
+  transform: translateX(0) rotateY(0); /* Flipping from right to left on hover */
+  scale: 1.1;
+  transition: 500ms;
+}
+
+.btn-flip-about:hover:before {
+  opacity: 0;
+  transform: translateX(100%) rotateY(-180deg); /* Hide front while flipping from right to left on hover */
+}
+
+.btn-flip-about:after {
+  width: 59px;
+    height: 56px;
+    top: 0;
+    left: -25px;
+    padding: 0px;
+    padding-top: 10px;
+    opacity: 0;
+    color: black;
+    font-size: 15px;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: yellow;
+    content: attr(data-back);
+    transform: translateX(-100%) rotateY(180deg);
+    border-radius: 50%;
+    font-weight: bolder;
+    
+}
+
+.btn-flip-about:before {
+  content: "\f007";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bolder;
+  width: 59px;
+  height: 56px;
+  top: 0;
+  left: -24px;
+  opacity: 1;
+  color: whitesmoke;
+  display: block;
+  padding: 0px;
+  padding-top: 8px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: rgb(37, 35, 35);
+  transform: translateX(0) rotateY(0);
+  border-radius: 50%;
+  
+}
+
+
+/* Portfolio button */
+.btn-flip-port {
+  margin-left: 27px;
+  margin-top: 10px;
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+.btn-flip-port:hover:after {
+  opacity: 1;
+  transform: translateX(0) rotateY(0); /* Flipping from right to left on hover */
+  scale: 1.1;
+  transition: 500ms;
+}
+
+.btn-flip-port:hover:before {
+  opacity: 0;
+  transform: translateX(100%) rotateY(-180deg); /* Hide front while flipping from right to left on hover */
+}
+
+.btn-flip-port:after {
+  width: 59px;
+    height: 56px;
+    top: 0;
+    left: -25px;
+    padding: 0px;
+    padding-top: 10px;
+    opacity: 0;
+    color: black;
+    font-size: 8px;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: yellow;
+    content: attr(data-back);
+    transform: translateX(-100%) rotateY(180deg);
+    border-radius: 50%;
+    font-weight: bolder;
+    
+}
+
+.btn-flip-port:before {
+  content: "\f0b1";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bolder;
+  width: 59px;
+  height: 56px;
+  top: 0;
+  left: -24px;
+  opacity: 1;
+  color: whitesmoke;
+  display: block;
+  padding: 0px;
+  padding-top: 8px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: rgb(37, 35, 35);
+  transform: translateX(0) rotateY(0);
+  border-radius: 50%;
+  
+}
+
+/* Contact button */
+.btn-flip-cont {
+  margin-left: 27px;
+  margin-top: 10px;
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+.btn-flip-cont:hover:after {
+  opacity: 1;
+  transform: translateX(0) rotateY(0); /* Flipping from right to left on hover */
+  scale: 1.1;
+  transition: 500ms;
+}
+
+.btn-flip-cont:hover:before {
+  opacity: 0;
+  transform: translateX(100%) rotateY(-180deg); /* Hide front while flipping from right to left on hover */
+}
+
+.btn-flip-cont:after {
+  width: 59px;
+    height: 56px;
+    top: 0;
+    left: -25px;
+    padding: 0px;
+    padding-top: 10px;
+    opacity: 0;
+    color: black;
+    font-size: 11px;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: yellow;
+    content: attr(data-back);
+    transform: translateX(-100%) rotateY(180deg);
+    border-radius: 50%;
+    font-weight: bolder;
+}
+
+.btn-flip-cont:before {
+  content: "\f2b6";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bolder;
+  width: 59px;
+  height: 56px;
+  top: 0;
+  left: -24px;
+  opacity: 1;
+  color: whitesmoke;
+  display: block;
+  padding: 0px;
+  padding-top: 8px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: rgb(37, 35, 35);
+  transform: translateX(0) rotateY(0);
+  border-radius: 50%;
+  
+}
+
+
+/* Blog button */
+.btn-flip-blog {
+  margin-left: 27px;
+  margin-top: 10px;
+    opacity: 1;
+    outline: 0;
+    color: #fff;
+    line-height: 40px;
+    position: relative;
+    text-align: center;
+    letter-spacing: 1px;
+    display: inline-block;
+    text-decoration: none;
+    font-family: 'Open Sans';
+    text-transform: uppercase;
+    border-radius: 50%;
+}
+
+.btn-flip-blog:hover:after {
+  opacity: 1;
+  transform: translateX(0) rotateY(0); /* Flipping from right to left on hover */
+  scale: 1.1;
+  transition: 500ms;
+}
+
+.btn-flip-blog:hover:before {
+  opacity: 0;
+  transform: translateX(100%) rotateY(-180deg); /* Hide front while flipping from right to left on hover */
+}
+
+.btn-flip-blog:after {
+  width: 59px;
+    height: 56px;
+    top: 0;
+    left: -25px;
+    padding: 0px;
+    padding-top: 10px;
+    opacity: 0;
+    color: black;
+    font-size: 15px;
+    display: block;
+    transition: 0.5s;
+    position: absolute;
+    background: yellow;
+    content: attr(data-back);
+    transform: translateX(-100%) rotateY(180deg);
+    border-radius: 50%;
+    font-weight: bolder;
+    
+}
+
+.btn-flip-blog:before {
+  content: "\f27a";
+  font-family: "Font Awesome 5 Free";
+  font-weight: bolder;
+  width: 59px;
+  height: 56px;
+  top: 0;
+  left: -24px;
+  opacity: 1;
+  color: whitesmoke;
+  display: block;
+  padding: 0px;
+  padding-top: 8px;
+  line-height: 40px;
+  transition: 0.5s;
+  position: relative;
+  background: rgb(37, 35, 35);
+  transform: translateX(0) rotateY(0);
+  border-radius: 50%;
+  
+}
+
+
+
+
+
+.light-btn
+{
+  border-radius: 50%;
+  height: 57px;
+  width: 62px;
+  margin-left: 27px;
+  background-color:rgb(37, 35, 35) ;
+  border: 1px solid rgb(37, 35, 35);
+  color: whitesmoke;
+  font-weight: bolder;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*about button css */
+
+a:hover
+{
+  color: yellow;
+}
+.brk-btn {
+  position: relative;
+  background: none;
+  color: whitesmoke;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0.2em solid yellow;
+  padding: 0.5em 2em;
+  margin-left: 252px;
+  cursor: pointer;
+
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    background: #222;
+    height: 0.3em;
+    right: 20%;
+    top: -0.21em;
+    transform: skewX(-45deg);
+    -webkit-transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+    cursor:pointer;
+  }
+  &::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width: 10%;
+    background: #222;
+    height: 0.3em;
+    left: 20%;
+    bottom: -0.25em;
+    transform: skewX(45deg);
+    -webkit-transition: all 0.45 cubic-bezier(0.86, 0, 0.07, 1);
+    transition: all 0.45s cubic-bezier(0.86, 0, 0.07, 1);
+    cursor: pointer;
+  }
+  &:hover {
+    &::before {
+      right: 80%;
+    }
+    &::after {
+      left: 80%;
+    }
+  }
+}
+
+
+
+
+/* modal css */
+.modal-dialog
+{
+
+height: 487px;
+width: 300px;
+}
+
+.modal-content {
+  position: relative;
+  left: -350px;
+  top: -32px;
+  display: flex;
+  flex-direction: column;
+  width: 368%;
+  height: 1507px;
+  pointer-events: auto;
+  background-color: rgb(24, 22, 22);
+  background-clip: padding-box;
+  border: 1px solid rgba(0,0,0,.2);
+  border-radius: 0.3rem;
+  outline: 0;
+}
+.modal
+{
+  
+  position: fixed;
+  top: 7px;
+  left: 146px;
+  z-index: 1060;
+  display: none;
+  width: 79%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+  outline: 0;
+
+}
+
+.modal-body
+{
+  display: flex;
+flex-direction: column;
+  padding: 0%;
+  margin: 0%;
+}
+
+
+.modal-hdng-div
+{
+
+  height: 200px;
+  width: 100%;
+  display: block;
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+.close-btn
+{
+
+      background-color: rgb(24,22,22);
+    border: 1px solid rgb(24,22,22);
+  color: yellow;
+  font-size: 34px;
+  left: 0px;
+  width: 50px;
+  margin-left: 1039px;
+}
+
+.fa-xmark
+{
+  font-weight: bolder;
+}
+
+.fa-xmark:hover
+{
+  color: whitesmoke;
+  transition: all ease-in-out 300ms;
+}
+.bg-hdng
+{
+  color: #8e8a8a;
+  font-weight: 1000;
+  font-size: 123px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-stretch: extra-expanded;
+  text-align: center;
+  /* width: 241px; */
+  /* border: 1px solid white; */
+  opacity: 0.3;
+}
+
+
+.centre-div-modal
+{
+  display: flex;
+  justify-content: space-around;
+
+
+}
+
+#title-about
+{
+  color: white;
+    font-weight: 900;
+    font-size: 98px;
+    position: relative;
+    top: -140px;
+    left: 283px;
+}
+
+
+#me
+{
+  color: yellow;
+  font-size: 98px;
+  font-weight: 900;
+  position: relative;
+  left: 646px;
+  top: -279px;
+}
+
+
+#info-hdng
+{
+  color: white;
+  margin-top: -10px;
+}
+
+
+.middle-div-modal
+{
+  display: flex;
+  flex-direction: column;
+  border: 1px solid white;
+}
+
+
+
+.short-bio
+{
+  height: 430px;
+padding: 8px;
+  width: 372px;
+
+  
+}
+ .attr
+ {
+  color: #8e8e8e;
+  font-weight: bold;
+margin-left: 2px;
+
+
+ }
+.prop
+{
+  color: white;
+    margin-left: 6px;
+  
+
+}
+
+.bio-boxes
+{
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+
+  align-items: center;
+}
+
+.modal-body-div
+{
+      height: 432px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+
+}
+
+.boxes
+{
+  border: 3px solid #252525;
+  margin-top: 10px;
+  height: 200px;
+  border-radius: 5px;
+}
+
+.box-no
+{
+  color: yellow;
+  font-weight: 800;
+  font-size: 55px;
+  margin-left: 45px;
+
+}
+
+.box-line
+{
+  color: white;
+    letter-spacing: -2px;
+    text-transform: uppercase;
+}
+
+
+.skills-div-1 , .skills-div-2
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 404px;
+
+}
+
+
+
+
+
+.loader {
+  width: 223px;
+  height: 214px;
+  border: 17px solid #f3f3f3;
+  border-radius: 50%;
+  /* border-top: 5px solid #3498db; */
+  
+  /* border-top: 4px solid #3498db; Spinner color */
+  /* animation: spin 2s linear infinite; Spinning animation */
+}
+/* 
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+} */
+
+#load1
+{
+  border-right: 18px solid yellow;
+  border-left: 18px solid yellow;
+  border-bottom: 18px solid yellow;
+  border-top: 18px solid yellow;
+}
+
+
+#load1-txt
+{
+  color: whitesmoke;
+  position: relative;
+  left: 41px;
+  top: 195px;
+}
+
+#load2
+{
+  border-right: 18px solid yellow;
+  border-left: 18px solid yellow;
+  border-bottom: 18px solid yellow;
+  border-top: 18px solid;
+}
+#load2-txt
+{
+  color: whitesmoke;
+  position: relative;
+  left: 63px;
+  top: 193px;
+
+}
+
+#load3
+{
+  border-right: 18px solid yellow;
+  border-left: 18px solid yellow;
+  border-bottom: 18px solid yellow;
+  border-top: 18px solid;
+}
+
+#load3-txt
+{
+  color: whitesmoke;
+  left: 9px;
+  top: 193px;
+  position: relative;
+}
+
+
+#load4
+{
+  border-right: 18px solid yellow;
+  border-left: 18px solid yellow;
+  border-bottom: 18px solid yellow;
+  border-top: 18px solid yellow;
+}
+
+#load4-txt
+{
+  color: whitesmoke;
+  position: relative;
+  left: 9px;
+  top: 193px;
+}
+
+
+#load5
+{
+  border-right: 18px solid yellow;
+  border-left: 18px solid yellow;
+  border-bottom: 18px solid yellow;
+  border-top: 18px solid yellow;
+}
+
+
+#load5-txt
+{
+  color: whitesmoke;
+  position: relative;
+  left: -1px;
+  top: 195px;
+}
+
+
+#load6
+{
+  border-bottom: 18px solid yellow;
+  border-right: 18px solid;
+  border-left: 18px solid;
+  border-top: 18px solid;
+  
+}
+
+
+#load6-txt
+{
+  color: whitesmoke;
+  position: relative;
+  left: 41px;
+  top: 195px;
+}
+
+.percent
+{
+  position: relative;
+  top: 10px;
+  left: 49px;
+  color: whitesmoke;
+
+}
+
+
+#Discover-btn
+{
+  height: 96px;
+    width: 99px;
+    border-radius: 50%;
+    background-color: black;
+    border: 6px solid yellow;
+    color: whitesmoke;
+    font-size: 20px;
+}
+
+#Discover-btn:hover
+{
+  color: yellow;
+  border: 6px solid white;
+transition: all 1s;
+}
+#Discover-btn:hover
+{
+    font-size:21px;
+  transition: all 200ms;
+
+
+}
+
+
+
+#like-btn
+{
+  height: 96px;
+    width: 99px;
+    border-radius: 50%;
+    background-color: black;
+    border: 6px solid yellow;
+    color: whitesmoke;
+    font-size: 20px;
+
+
+}
+.like-btn
+{
+  font-size: 30px;
+  font-weight: bolder;
+
+}
+
+#like-btn:hover
+{
+  border: 6px solid white;
+  transition: all 1s;
+}
+
+#like-btn:hover .like-btn
+{
+  color: yellow;
+  transition: all 1s;
+  
+}
+
+

@@ -1,10 +1,418 @@
-body{
+* {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+
+body
+{
     margin: 0%;
+    display: flex;
+    flex-wrap:wrap;
     background-color: black;
 }
 
-h1{
+/* main hdng styling */
+
+
+.main-hdng
+{
+  height:156px;
+    border: 1px solid blue;
+    padding-top: 20px;
+}
+
+.bg-hdng
+{
+  color: #8e8a8a;
+  font-weight: 1000;
+  font-size: 147px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-stretch: extra-expanded;
+  text-align: center;
+  /* width: 241px; */
+  /* border: 1px solid white; */
+  opacity: 0.2;
+  margin-left:64px;
+  margin-top: -27px;
+}
+#title-about {
+ 
+        color: white;
+        font-weight: 900;
+        font-size: 93px;
+        margin-top: -153px;
+        margin-left: 451px;
+        position: relative;
+        z-index: 3;
+        letter-spacing: -8px;
+}
+
+#me {
     color: yellow;
-    font-size: 50px;
+    font-size: 85px;
+    font-weight: 900;
+    position: relative;
+    top: -123px;
+    left: 589px;
+    letter-spacing: -7px;
+
+
+}
+
+.top-div
+{
+    border: 1px solid yellow;
+}
+
+/* middle section css */
+
+.middle-section-div
+{
+    border: 1px solid yellow;
+    height: auto;
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+}
+
+/* tabs css */
+
+
+.tabs-div
+{
+    border: 1px solid red;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding-top: 14px;
+    margin-top: 0px;
+    margin-bottom: 0%;
+
+}
+
+.tabs-list
+{
+    color: white;
+    cursor: pointer;
+}
+
+#tab1 ,#tab2 , #tab3 , #tab4 , #tab5 , #tab6 , #tab7
+{
+    display: inline-block;
+    margin-left: 34px;
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: transform 0.3s ease-in-out;
+
+}
+
+#tab1:hover , #tab2:hover , #tab3:hover , #tab4:hover , #tab5:hover , #tab6:hover , #tab7:hover
+{
+    color: yellow;
+    transform: scale(0.9);
     
 }
+
+
+
+
+/* Cards div0 */
+
+.cards-div , .cards-div-2
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 304px;
+  flex-wrap: wrap;
+}
+
+
+.cards
+{
+  height:auto;
+  border: 1px solid green;
+}
+
+.project-imgs
+{
+  height: 242px;
+  width: 316px;
+  border-radius:  14px; ;
+}
+
+#img1
+{
+  margin-top: 0px;
+}
+
+#img1:hover 
+{
+  display: none;
+  
+}
+
+
+/* hover image text sow css */
+.card {
+
+  border: 2px solid yellow;
+  border-radius: 16px;
+  width: 360px;
+  height: 248px;
+  /* background: url(https://picsum.photos/360/360?image=0); */
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 5px 50px rgba(0, 0, 0, 0.85);
+  
+
+}
+.card:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.92);
+}
+.card .img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+   
+  display: flex;
+}
+
+.card:hover .content {
+  transform: translateY(0%);
+  transition: 1s;
+  transition-delay: 0.1s;
+}
+
+.content {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: white;
+  padding: 20px 20px;
+  background-color: black;
+  width: 100%;
+  height: 100%;
+  transform: translateX(-100%);
+}
+
+
+.go-btn
+{
+    color: royalblue;
+    font-weight: bold;
+    font-size: 20px;
+    border-radius: 5px;
+    height: 48px;
+    width: 100px;
+    border: 2px solid mediumblue;
+transform: scale(1);
+}
+
+.go-btn:hover
+{
+color: white;
+border: 2px solid white;
+background-color: royalblue;
+transition: 0.3s all ease;
+transform: scale(1.01);
+text-decoration: underline;
+}
+
+
+
+
+
+/* Animation code */
+@keyframes flip-diagonal-2-tl {
+  0% {
+    -webkit-transform: rotateY(0deg); /* Change rotate3d to rotateY */
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg); /* Change rotate3d to rotateY */
+    transform: rotateY(-180deg);
+  }
+}
+
+@-webkit-keyframes flip-diagonal-2-tl {
+  0% {
+    -webkit-transform: rotateY(0deg); /* Change rotate3d to rotateY */
+    transform: rotateY(0deg);
+  }
+  100% {
+    -webkit-transform: rotateY(-180deg); /* Change rotate3d to rotateY */
+    transform: rotateY(-180deg);
+  }
+}
+
+/* Animation code */
+.slide-fwd-center {
+  animation: slide-fwd-center .45s cubic-bezier(.25,.46,.45,.94) both;
+  -webkit-animation: slide-fwd-center .45s cubic-bezier(.25,.46,.45,.94) both;
+}
+
+@keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateX(0); /* Change translateZ to translateX */
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(160px); /* Change translateZ to translateX */
+    transform: translateX(160px);
+  }
+}
+
+@-webkit-keyframes slide-fwd-center {
+  0% {
+    -webkit-transform: translateX(0); /* Change translateZ to translateX */
+    transform: translateX(0);
+  }
+  100% {
+    -webkit-transform: translateX(160px); /* Change translateZ to translateX */
+    transform: translateX(160px);
+  }
+}
+
+/* Additional styles for the content */
+
+
+/* Rest of your CSS styles */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Side bar css */
+
+
+
+/* Sidebar css */
+
+.sidebar
+{
+   
+    position: fixed;
+    border: 1px solid blue;
+    height: 701px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:transparent;
+ margin-left: 91%;
+}
+
+.link-btns {
+ 
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    background-color: black;
+    color: #fff;
+    padding: 4px;
+    padding-top: 25px;
+    width: 81px;
+    height: 79px;
+    text-align: center;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #193047;
+    border-radius: 50%;
+    border: 1px solid black;
+    font-weight: bold;
+border:2px solid yellow;
+}
+
+
+.link-btns:hover {
+  background: black;
+    box-shadow: 0px -1px 8px 5px rgb(205, 205, 0);
+    color: white;
+}
+
+.link-btns:after {
+  content: "";
+  background: #1abc9c;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  /* margin-top: -120%; */
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.link-btns:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.link-btns:focus { outline:0; }
+
+
+
+
+
+
+.fa-house , .fa-user , .fa-briefcase , .fa-envelope-open , .fa-comments 
+{
+    font-size: 23px;
+    font-weight: 800;
+}
+
+
+ .bulbon {
+    display: none;
+    font-size: 23px;
+    font-weight: 800;
+  }
+  .bulbof {
+    display: block;
+    font-size: 23px;
+  }
+
+
+

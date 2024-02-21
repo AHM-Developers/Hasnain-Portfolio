@@ -1,10 +1,448 @@
-body{
+* {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+body
+{
     margin: 0%;
+    display: flex;
+    flex-wrap:wrap;
     background-color: black;
 }
 
-h1{
-    color: yellow;
-    font-size: 50px;
-    
+
+.main-div
+{
+    display: flex;
+flex-wrap: wrap;
+height:auto;
+border: 1px solid white;
+flex-direction: row;
 }
+
+
+.top-div
+{
+  border: 1px solid yellow;
+  display: flex;
+  flex-wrap: wrap;
+justify-content: space-around;
+height: auto;
+
+}
+
+
+/* heading css */
+
+
+.bg-hdng
+{
+  color: #8e8a8a;
+  font-weight: 1000;
+  font-size: 147px;
+  letter-spacing: 10px;
+  text-transform: uppercase;
+  font-stretch: extra-expanded;
+  text-align: center;
+  /* width: 241px; */
+  /* border: 1px solid white; */
+  opacity: 0.2;
+  margin-left:64px;
+  margin-top: -27px;
+}
+#title-about {
+  letter-spacing: -7px;
+  color: white;
+  font-weight: 900;
+  font-size: 92px;
+  margin-top: -148px;
+  margin-left: 498px;
+  position: relative;
+  z-index: 3;
+  width: 159px;
+
+}
+
+#me {
+  letter-spacing: -9px;
+  color: yellow;
+  font-size: 110px;
+  font-weight: 900;
+  position: relative;
+  top: -144px;
+  left: 640px;
+
+}
+
+
+.main-hdng
+{
+  height: 144px;
+  border: 1px solid blue;
+}
+
+
+/* cards div and cards css */
+
+.cards-div1
+{
+  border: 1px solid red;
+  height: 395px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+}
+
+
+  
+  .cards {
+    border: 1px solid white;
+    height: 380px;
+    border: 1px solid #1d1d1d;
+    background-color: #1d1d1d;
+    cursor:pointer;
+background-size: cover;
+overflow: hidden;
+}
+
+
+.blog-imgs
+{
+  height: 220px;
+  width: 316px;
+  cursor: default;
+  transform: scale(1);
+  overflow: hidden;
+  
+}
+
+.cards:hover a,p
+{
+  opacity: 0.8;
+}
+
+
+.cards:hover .blog-imgs
+{
+  transform: scale(1.1);
+  transition: 1s ease-in-out;
+  overflow: hidden;
+ 
+}
+
+
+.cards:not(:hover) .blog-imgs {
+  transform: scale(1); /* Scale back to normal when not hovering */
+}
+
+.topic-hdng
+{
+  color: white;
+  border-top: 5px solid yellow;
+  margin-top:8px ;
+}
+
+
+.cards p
+{
+
+    text-align: center;
+    color: white;
+    width: 316px;
+    color: white;
+}
+
+.blog-links
+{
+  color: white;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Sidebar css */
+
+.sidebar
+{
+   
+    position: fixed;
+    border: 1px solid blue;
+    height: 701px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:transparent;
+ margin-left: 91%;
+}
+
+.link-btns {
+ 
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    background-color: black;
+    color: #fff;
+    padding: 4px;
+    padding-top: 25px;
+    width: 81px;
+    height: 79px;
+    text-align: center;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #193047;
+    border-radius: 50%;
+    border: 1px solid black;
+    font-weight: bold;
+border:2px solid yellow;
+}
+
+
+.link-btns:hover {
+  background: black;
+    box-shadow: 0px -1px 8px 5px rgb(205, 205, 0);
+    color: white;
+}
+
+.link-btns:after {
+  content: "";
+  background: #1abc9c;
+  display: block;
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  /* margin-top: -120%; */
+  opacity: 0;
+  transition: all 0.8s
+}
+
+.link-btns:active:after {
+  padding: 0;
+  margin: 0;
+  opacity: 1;
+  transition: 0s
+}
+
+.link-btns:focus { outline:0; }
+
+
+
+
+
+
+.fa-house , .fa-user , .fa-briefcase , .fa-envelope-open , .fa-comments 
+{
+    font-size: 23px;
+    font-weight: 800;
+}
+
+
+ .bulbon {
+    display: none;
+    font-size: 23px;
+    font-weight: 800;
+  }
+  .bulbof {
+    display: block;
+    font-size: 23px;
+  }
+

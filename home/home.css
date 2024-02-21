@@ -1,31 +1,62 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro');
+
+* {
+  font-family: "Protest Riot", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
 body
 {
     margin: 0%;
+    background-color: #111;
 }
 .main-div
 {
     display: flex;
+    height: auto;
 }
 
-
+.bulb-btn
+{
+  cursor: pointer;
+  font-size: 18px;
+  position: relative;
+  background-color: black;
+  color: #fff;
+  padding: 4px;
+  padding-top: 25px;
+  width: 81px;
+  height: 79px;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-weight: bold;
+border:2px solid yellow;
+}
 
 
 .color-div
 {
     background-color: yellow;
-height: 703px;
-
-
-
+height: 737px;
 
 }
 
+
+
+
+
+
 .content-div
 {
-    background-color: black;
-    height: 703px;
+    background-color: #111;
+    height: 700px;
     border-left: 122px solid yellow;
-    border-bottom: 336px solid black;
+    border-bottom: 738px solid #111;
     margin-left: 0px;
     border-top: 100px;
 display: flex;
@@ -62,7 +93,7 @@ display: flex;
     left: -299px;
     top: 65px;
     /* margin-top: 59px; */
-    background-color: black;
+    background-color: #111;
     box-shadow: black 0px 0px 6px 6px;
     border-radius: 15px;
 }
@@ -80,432 +111,166 @@ display: flex;
 }
 #name
 {
-  color: gold;
+  color: yellow;
   font-weight: 900;
   font-size: 55px;
   
 }
+/* Target the element with the ID 'prof' */
+#prof {
+  /* Set the right border to create a cursor effect */
+  border-right: solid 5px rgba(255,255,255,.75);
+  /* Ensure the text doesn't wrap and overflow */
+  white-space: nowrap;
+  overflow: hidden;
+  /* Set the font family and size for the text */
+  font-family: "Protest Riot", sans-serif;
+  font-size: 44px;
+  /* Set the color of the text to white */
+  color: white;
+}
 
-#prof
-{
-  color: whitesmoke;
-  font-weight: 700;
-  font-size: 50px;
-  font-family: Nunito;
-  margin-left: 33px;
+/* Define the animation for the text */
+@keyframes animated-text {
+  /* From 0% width */
+  from {
+    width: 0;
+  }
+  /* At 25% and 75% width */
+  25%, 75% {
+    width: 400px;
+  }
+  /* Back to 0% width */
+  to {
+    width: 0;
+  }
+}
 
+/* Define the animation for the cursor */
+@keyframes animated-cursor {
+  /* Initially, show the cursor */
+  from {
+    border-right-color: rgba(255,255,255,.75);
+  }
+  /* At the end, hide the cursor */
+  to {
+    border-right-color: transparent;
+  }
+}
 
+/* Apply the animations to the element */
+#prof {
+  animation: animated-text 10s linear 3s infinite normal both,
+  animated-cursor 1.5s linear infinite;
 }
 
 #bio
 {
+  letter-spacing: 2px;
+  line-break: anywhere;
+  margin-bottom: 50px;
+  padding: 6px;
+  margin-top: 18px;
   color: whitesmoke;
-  font-family: Avenir;
+  font-family: "Protest Riot", sans-serif;
   word-spacing: 2px;
   max-width: 702px;
-  font-size: 18px;
-
+  font-size: 21px;
 
 }
+
+
+
+/* Sidebar css */
 
 .sidebar
 {
-  background-color: black;
-  padding: 5px;
-
+   
+    position: fixed;
+    border: 1px solid blue;
+    height: 731px;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color:transparent;
+ margin-left: 91%;
 }
 
-/* sidebar buttons css */
 
-/* home button */
-.btn-flip-home {
-  margin-left: 27px;
-  margin-top: 10px;
-    opacity: 1;
-    outline: 0;
-    color: #fff;
-    line-height: 40px;
+
+.link-btns {
+ 
+    cursor: pointer;
+    font-size: 18px;
     position: relative;
-    text-align: center;
-    letter-spacing: 1px;
-    display: inline-block;
-    text-decoration: none;
-    font-family: 'Open Sans';
-    text-transform: uppercase;
-    border-radius: 50%;
-}
-
-.btn-flip-home:hover:after {
-  opacity: 1;
-  transform: translateX(0) rotateY(0); /* Flipping from right to left on hover */
-  scale: 1.1;
-  transition: 500ms;
-}
-
-.btn-flip-home:hover:before {
-  opacity: 0;
-  transform: translateX(100%) rotateY(-180deg); /* Hide front while flipping from right to left on hover */
-}
-
-.btn-flip-home:after {
-  width: 59px;
-    height: 56px;
-    top: 0;
-    left: -25px;
-    padding: 0px;
-    padding-top: 10px;
-    opacity: 0;
-    color: black;
-    font-size: 15px;
-    display: block;
-    transition: 0.5s;
-    position: absolute;
-    background: yellow;
-    content: attr(data-back);
-    transform: translateX(-100%) rotateY(180deg);
-    border-radius: 50%;
-    font-weight: bolder;
-    
-}
-
-.btn-flip-home:before {
-  content: "\f015";
-  font-family: "Font Awesome 5 Free";
-  font-weight: bolder;
-  width: 59px;
-  height: 56px;
-  top: 0;
-  left: -24px;
-  opacity: 1;
-  color: whitesmoke;
-  display: block;
-  padding: 0px;
-  padding-top: 8px;
-  line-height: 40px;
-  transition: 0.5s;
-  position: relative;
-  background: rgb(37, 35, 35);
-  transform: translateX(0) rotateY(0);
-  border-radius: 50%;
-  
-}
-
-/* about button */
-.btn-flip-about {
-  margin-left: 27px;
-  margin-top: 10px;
-    opacity: 1;
-    outline: 0;
+    background-color: black;
     color: #fff;
-    line-height: 40px;
-    position: relative;
+    padding: 4px;
+    padding-top: 25px;
+    width: 81px;
+    height: 79px;
     text-align: center;
-    letter-spacing: 1px;
-    display: inline-block;
-    text-decoration: none;
-    font-family: 'Open Sans';
-    text-transform: uppercase;
+    transition-duration: 0.4s;
+    overflow: hidden;
+    box-shadow: 0 5px 15px #193047;
     border-radius: 50%;
+    border: 1px solid black;
+    font-weight: bold;
+border:2px solid yellow;
 }
 
-.btn-flip-about:hover:after {
-  opacity: 1;
-  transform: translateX(0) rotateY(0); /* Flipping from right to left on hover */
-  scale: 1.1;
-  transition: 500ms;
+
+.link-btns:hover {
+  background: black;
+    box-shadow: 0px -1px 8px 5px rgb(205, 205, 0);
+    color: white;
 }
 
-.btn-flip-about:hover:before {
-  opacity: 0;
-  transform: translateX(100%) rotateY(-180deg); /* Hide front while flipping from right to left on hover */
-}
-
-.btn-flip-about:after {
-  width: 59px;
-    height: 56px;
-    top: 0;
-    left: -25px;
-    padding: 0px;
-    padding-top: 10px;
-    opacity: 0;
-    color: black;
-    font-size: 15px;
-    display: block;
-    transition: 0.5s;
-    position: absolute;
-    background: yellow;
-    content: attr(data-back);
-    transform: translateX(-100%) rotateY(180deg);
-    border-radius: 50%;
-    font-weight: bolder;
-    
-}
-
-.btn-flip-about:before {
-  content: "\f007";
-  font-family: "Font Awesome 5 Free";
-  font-weight: bolder;
-  width: 59px;
-  height: 56px;
-  top: 0;
-  left: -24px;
-  opacity: 1;
-  color: whitesmoke;
+.link-btns:after {
+  content: "";
+  background: #1abc9c;
   display: block;
-  padding: 0px;
-  padding-top: 8px;
-  line-height: 40px;
-  transition: 0.5s;
-  position: relative;
-  background: rgb(37, 35, 35);
-  transform: translateX(0) rotateY(0);
-  border-radius: 50%;
-  
-}
-
-
-/* Portfolio button */
-.btn-flip-port {
-  margin-left: 27px;
-  margin-top: 10px;
-    opacity: 1;
-    outline: 0;
-    color: #fff;
-    line-height: 40px;
-    position: relative;
-    text-align: center;
-    letter-spacing: 1px;
-    display: inline-block;
-    text-decoration: none;
-    font-family: 'Open Sans';
-    text-transform: uppercase;
-    border-radius: 50%;
-}
-
-.btn-flip-port:hover:after {
-  opacity: 1;
-  transform: translateX(0) rotateY(0); /* Flipping from right to left on hover */
-  scale: 1.1;
-  transition: 500ms;
-}
-
-.btn-flip-port:hover:before {
+  position: absolute;
+  padding-top: 300%;
+  padding-left: 350%;
+  margin-left: -20px !important;
+  /* margin-top: -120%; */
   opacity: 0;
-  transform: translateX(100%) rotateY(-180deg); /* Hide front while flipping from right to left on hover */
+  transition: all 0.8s
 }
 
-.btn-flip-port:after {
-  width: 59px;
-    height: 56px;
-    top: 0;
-    left: -25px;
-    padding: 0px;
-    padding-top: 10px;
-    opacity: 0;
-    color: black;
-    font-size: 8px;
-    display: block;
-    transition: 0.5s;
-    position: absolute;
-    background: yellow;
-    content: attr(data-back);
-    transform: translateX(-100%) rotateY(180deg);
-    border-radius: 50%;
-    font-weight: bolder;
-    
-}
-
-.btn-flip-port:before {
-  content: "\f0b1";
-  font-family: "Font Awesome 5 Free";
-  font-weight: bolder;
-  width: 59px;
-  height: 56px;
-  top: 0;
-  left: -24px;
+.link-btns:active:after {
+  padding: 0;
+  margin: 0;
   opacity: 1;
-  color: whitesmoke;
-  display: block;
-  padding: 0px;
-  padding-top: 8px;
-  line-height: 40px;
-  transition: 0.5s;
-  position: relative;
-  background: rgb(37, 35, 35);
-  transform: translateX(0) rotateY(0);
-  border-radius: 50%;
-  
+  transition: 0s
 }
 
-/* Contact button */
-.btn-flip-cont {
-  margin-left: 27px;
-  margin-top: 10px;
-    opacity: 1;
-    outline: 0;
-    color: #fff;
-    line-height: 40px;
-    position: relative;
-    text-align: center;
-    letter-spacing: 1px;
-    display: inline-block;
-    text-decoration: none;
-    font-family: 'Open Sans';
-    text-transform: uppercase;
-    border-radius: 50%;
-}
-
-.btn-flip-cont:hover:after {
-  opacity: 1;
-  transform: translateX(0) rotateY(0); /* Flipping from right to left on hover */
-  scale: 1.1;
-  transition: 500ms;
-}
-
-.btn-flip-cont:hover:before {
-  opacity: 0;
-  transform: translateX(100%) rotateY(-180deg); /* Hide front while flipping from right to left on hover */
-}
-
-.btn-flip-cont:after {
-  width: 59px;
-    height: 56px;
-    top: 0;
-    left: -25px;
-    padding: 0px;
-    padding-top: 10px;
-    opacity: 0;
-    color: black;
-    font-size: 11px;
-    display: block;
-    transition: 0.5s;
-    position: absolute;
-    background: yellow;
-    content: attr(data-back);
-    transform: translateX(-100%) rotateY(180deg);
-    border-radius: 50%;
-    font-weight: bolder;
-}
-
-.btn-flip-cont:before {
-  content: "\f2b6";
-  font-family: "Font Awesome 5 Free";
-  font-weight: bolder;
-  width: 59px;
-  height: 56px;
-  top: 0;
-  left: -24px;
-  opacity: 1;
-  color: whitesmoke;
-  display: block;
-  padding: 0px;
-  padding-top: 8px;
-  line-height: 40px;
-  transition: 0.5s;
-  position: relative;
-  background: rgb(37, 35, 35);
-  transform: translateX(0) rotateY(0);
-  border-radius: 50%;
-  
-}
-
-
-/* Blog button */
-.btn-flip-blog {
-  margin-left: 27px;
-  margin-top: 10px;
-    opacity: 1;
-    outline: 0;
-    color: #fff;
-    line-height: 40px;
-    position: relative;
-    text-align: center;
-    letter-spacing: 1px;
-    display: inline-block;
-    text-decoration: none;
-    font-family: 'Open Sans';
-    text-transform: uppercase;
-    border-radius: 50%;
-}
-
-.btn-flip-blog:hover:after {
-  opacity: 1;
-  transform: translateX(0) rotateY(0); /* Flipping from right to left on hover */
-  scale: 1.1;
-  transition: 500ms;
-}
-
-.btn-flip-blog:hover:before {
-  opacity: 0;
-  transform: translateX(100%) rotateY(-180deg); /* Hide front while flipping from right to left on hover */
-}
-
-.btn-flip-blog:after {
-  width: 59px;
-    height: 56px;
-    top: 0;
-    left: -25px;
-    padding: 0px;
-    padding-top: 10px;
-    opacity: 0;
-    color: black;
-    font-size: 15px;
-    display: block;
-    transition: 0.5s;
-    position: absolute;
-    background: yellow;
-    content: attr(data-back);
-    transform: translateX(-100%) rotateY(180deg);
-    border-radius: 50%;
-    font-weight: bolder;
-    
-}
-
-.btn-flip-blog:before {
-  content: "\f27a";
-  font-family: "Font Awesome 5 Free";
-  font-weight: bolder;
-  width: 59px;
-  height: 56px;
-  top: 0;
-  left: -24px;
-  opacity: 1;
-  color: whitesmoke;
-  display: block;
-  padding: 0px;
-  padding-top: 8px;
-  line-height: 40px;
-  transition: 0.5s;
-  position: relative;
-  background: rgb(37, 35, 35);
-  transform: translateX(0) rotateY(0);
-  border-radius: 50%;
-  
-}
+.link-btns:focus { outline:0; }
 
 
 
 
 
-.light-btn
+
+.fa-house , .fa-user , .fa-briefcase , .fa-envelope-open , .fa-comments 
 {
-  border-radius: 50%;
-  height: 57px;
-  width: 62px;
-  margin-left: 27px;
-  background-color:rgb(37, 35, 35) ;
-  border: 1px solid rgb(37, 35, 35);
-  color: whitesmoke;
-  font-weight: bolder;
-
+    font-size: 23px;
+    font-weight: 800;
 }
 
 
-
-
-
-
-
+ .bulbon {
+    display: none;
+    font-size: 23px;
+    font-weight: 800;
+  }
+  .bulbof {
+    /* display: block; */
+    font-size: 23px;
+  }
 
 
 
@@ -515,7 +280,7 @@ display: flex;
 
 /*about button css */
 
-a:hover
+.brk-btn:hover
 {
   color: yellow;
 }
@@ -568,6 +333,30 @@ a:hover
   }
 }
 
+/* modal scrollbar */
+
+/* Target the scrollbar inside the modal */
+.modal::-webkit-scrollbar {
+  width: 6px; /* Width of the scrollbar */
+}
+
+/* Track (the area behind the scrollbar) */
+.modal::-webkit-scrollbar-track {
+  background:#222; /* Color of the track */
+}
+
+/* Handle (the draggable part of the scrollbar) */
+.modal::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the handle */
+  border-radius: 5px; /* Rounded corners */
+  transition: background 0.6s ease; /* Smooth transition effect */
+}
+
+/* Handle on hover */
+.modal::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Color of the handle on hover */
+}
+
 
 
 
@@ -603,7 +392,7 @@ width: 300px;
   z-index: 1060;
   display: none;
   width: 79%;
-  height: 100%;
+  height: auto;
   overflow-x: hidden;
   overflow-y: auto;
   outline: 0;
@@ -682,7 +471,7 @@ flex-direction: column;
     font-size: 98px;
     position: relative;
     top: -140px;
-    left: 283px;
+    left: 348px;
 }
 
 
@@ -692,7 +481,7 @@ flex-direction: column;
   font-size: 98px;
   font-weight: 900;
   position: relative;
-  left: 646px;
+  left: 633px;
   top: -279px;
 }
 
@@ -708,7 +497,7 @@ flex-direction: column;
 {
   display: flex;
   flex-direction: column;
-  border: 1px solid white;
+  
 }
 
 
@@ -736,6 +525,26 @@ margin-left: 2px;
   
 
 }
+.modal-body-div
+{
+      height: 432px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    
+
+}
+
+.my-img-class
+{
+ display: none;
+}
+#my-img
+{
+  display: none;
+}
+
+/* Boxes Styling */
 
 .bio-boxes
 {
@@ -747,15 +556,7 @@ margin-left: 2px;
   align-items: center;
 }
 
-.modal-body-div
-{
-      height: 432px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    
 
-}
 
 .boxes
 {
@@ -787,7 +588,7 @@ margin-left: 2px;
   display: flex;
   justify-content: space-around;
   align-items: center;
-  height: 404px;
+  height: 391px;
 
 }
 
@@ -796,7 +597,7 @@ margin-left: 2px;
 
 
 .loader {
-  width: 223px;
+  width: 214px;
   height: 214px;
   border: 17px solid #f3f3f3;
   border-radius: 50%;
@@ -914,6 +715,42 @@ margin-left: 2px;
   top: 195px;
 }
 
+#load7
+{
+  border-bottom: 18px solid;
+  border-right: 18px solid;
+  border-left: 18px solid;
+  border-top: 18px solid;
+
+}
+
+#load7-txt
+{
+  color: whitesmoke;
+  position: relative;
+  left: 41px;
+  top: 195px;
+}
+
+#load8
+{
+  border-bottom: 18px solid;
+  border-right: 18px solid;
+  border-left: 18px solid;
+  border-top: 18px solid;
+
+}
+
+#load8-txt
+{
+  color: whitesmoke;
+  position: relative;
+  left: 41px;
+  top: 195px;
+}
+
+
+
 .percent
 {
   position: relative;
@@ -984,3 +821,596 @@ transition: all 1s;
 }
 
 
+
+
+/* text animation */
+
+
+.animate__rubberBand {
+  display: inline-block;
+  margin: 0 0.5rem;
+
+  animation: rubberBand; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+
+only changes this particular animation duration */
+.animate__animated.animate__rubberBand {
+  --animate-duration: 2s;
+}
+
+/* This changes all the animations globally */
+:root {
+  --animate-duration: 800ms;
+  --animate-delay: 0.9s;
+  
+}
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 767px) {
+
+  body
+  {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .color-div {
+    display: none;
+  }
+
+  .content-div
+  {
+    margin-left: 0.4vh;
+    border: 1px solid black;
+  }
+.profile
+{
+  
+  border-radius: 50%;
+  border: 3px solid #5d5959;
+  box-shadow: 0px 0px 5px 2px #4a4a4a;
+  position: relative;
+  left: 75px;
+  top: 48px;
+  height: 210px;
+  width: 214px;
+  
+}
+
+#name {
+  font-weight: 500;
+  font-size: 33px;
+  margin-top: -16px;
+  margin-left: 10px;
+
+}
+
+.content-txt
+{
+  width: 357px;
+  height: 305px;
+  margin-left: -213px;
+  margin-top: 281px;
+
+}
+#prof {
+  border-right: solid 5px rgba(255,255,255,.75);
+  overflow: hidden;
+  font-family: "Protest Riot", sans-serif;
+  font-size: 30px;
+  color: white;
+  margin-left: 52px;
+  animation: animated-text 10s linear 3s infinite normal both,
+  animated-cursor 1.5s linear infinite;
+}
+
+
+/* Define the animation for the text */
+@keyframes animated-text {
+  /* From 0% width */
+  from {
+    width: 0;
+  }
+  /* At 25% and 75% width */
+  25%, 75% {
+    width: 277px;
+  }
+  /* Back to 0% width */
+  to {
+    width: 0;
+  }
+}
+
+/* Define the animation for the cursor */
+@keyframes animated-cursor {
+  /* Initially, show the cursor */
+  from {
+    border-right-color: rgba(255,255,255,.75);
+  }
+  /* At the end, hide the cursor */
+  to {
+    border-right-color: transparent;
+  }
+}
+
+
+#bio {
+  
+  letter-spacing: 0.8px;
+  margin-bottom: 29px;
+  margin-top: 9px;
+  color: whitesmoke;
+  font-family: "Protest Riot", sans-serif;
+  word-spacing: 0px;
+  max-width: 468px;
+  font-size: 15px;
+  /* border: 1px solid blue; */
+  font-weight: lighter;
+
+ 
+}
+
+
+
+
+.brk-btn
+{
+  margin-left: 112px;
+}
+
+
+
+
+
+
+
+
+
+
+
+.sidebar
+{
+
+  position: fixed;
+  /* border: 1px solid blue; */
+  height: 11vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: #2b2a2a;
+  margin-left: 0vh;
+  margin-top: 88.9vh;
+  width: 56vh;
+  border: none;
+
+}
+
+
+.link-btns
+{
+  cursor: pointer;
+  font-size: 15px;
+  position: relative;
+  background-color: black;
+  color: #fff;
+  padding-top: 14px;
+  width: 54px;
+  height: 56px;
+  text-align: center;
+  transition-duration: 0.4s;
+  overflow: hidden;
+  box-shadow: 0 5px 15px #193047;
+  border-radius: 50%;
+  border: 1px solid black;
+  font-weight: bold;
+  border: 2px solid yellow;
+}
+
+
+.bulb-btn
+{
+  
+  display: inline-block;
+  font-size: 1em;
+  /* padding: 2vh; */
+  left: 44vh;
+  top: 2vh;
+  padding-top: 2.5vh;
+  width: 9.5vh;
+  height: 9vh;
+  position: fixed;
+  box-shadow: 0 5px 15px #193047;
+  color: white;
+}
+
+.bulb-btn:hover
+{
+  box-shadow: 0px 5px 10px yellow;
+  color: white;
+}
+
+
+/* modal responsive */
+
+.modal
+{
+  left: 0px;
+  width: 100%;
+}
+
+.modal-content {
+  position: relative;
+  left: -5px;
+  top: -32px;
+width: 375px;
+  height: auto;
+}
+
+.bg-hdng{
+    color: #8e8a8a;
+    font-weight: 900;
+    font-size: 63px;
+    text-align: start;
+    /* width: 241px; */
+    /* border: 1px solid white; */
+    opacity: 0.3;
+    margin-left: 53px;
+}
+
+#title-about {
+  color: white;
+  font-weight: 600;
+  font-size: 49px;
+  position: relative;
+  top: -74px;
+  left: 73px;
+}
+
+#me
+{
+  color: yellow;
+  font-size: 57px;
+  font-weight: 600;
+  position: relative;
+  left: 219px;
+  top: -150px;
+
+}
+
+.modal-hdng-div {
+  height: 200px;
+  width: 375px;
+  display: block;
+  margin-top: 3px;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+.my-img-class
+{
+  
+  height: 224px;
+  width: 220px;
+  margin-top: -72px;
+  margin-left: 73px;
+  border-radius: 50%;
+  display: block;
+ 
+}
+
+
+#my-img
+{
+  
+  height: 33vh;
+  object-fit: cover;
+  width: 34vh;
+  border: 7px solid #393838;
+  border-radius: 50%;
+  
+  background-color: #111;
+display: block;
+}
+
+
+#info-hdng
+{
+  color: white;
+  margin-top: 6px;
+  text-align: center;
+  margin-left: 12px;
+  font-size: 35px;
+
+}
+
+.centre-div-modal {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+
+}
+.modal-body-div {
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  width: 375px;
+}
+
+.short-bio
+{
+  
+    height: 321px;
+    padding: 9px;
+    width: 375px;
+    margin-left: 0px;
+}
+
+.attr:nth-child(2) , .attr:nth-child(3) , .attr:nth-child(4)  , .attr:nth-child(7)    , .attr:nth-child(6) , .attr:nth-child(9) ,.attr:nth-child(8)  , .attr:nth-child(10), .attr:nth-child(5)
+{
+  display: inline-block;
+
+  margin-left: 15px;
+}
+
+
+.attr{
+color: #8e8e8e;
+font-weight: 700;
+margin-left: 2px;
+font-size: 17px;
+letter-spacing: 1.08px;
+}
+
+.bio-boxes {
+  height: 430px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  width: 600px;
+
+}
+
+/* #third-box {
+  position: relative;
+  left: -158px;
+  top: 216px;
+
+} */
+
+.boxes {
+  width: 172px;
+  border: 3px solid #252525;
+  margin-top: 10px;
+  height: 173px;
+  border-radius: 5px;
+
+
+}
+
+.modal
+{
+  height: 100%;
+}
+
+
+.modal-body
+{
+  height: auto;
+}
+
+
+.middle-div-modal {
+
+  display: flex;
+  flex-direction: column;
+  
+  width: 374px;
+
+  margin-left: -3px;
+  justify-content: space-between;
+}
+
+
+
+.middle-div-modal:nth-child(1)
+{
+  font-size: 47px;
+  text-decoration: underline 4px whitesmoke;
+}
+
+
+
+
+/* skills loaders Resonsive */
+
+.skills-div-1
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
+.loader {
+  width: 130px;
+  height: 130px;
+  border: 12px solid #f3f3f3;
+  border-radius: 50%;
+
+}
+
+#load1
+{
+  border-right: 12px solid yellow;
+  border-left: 12px solid yellow;
+  border-bottom: 12px solid yellow;
+  border-top: 12px solid yellow;
+}
+
+#load1-txt
+{
+  color: whitesmoke;
+  position: relative;
+  left: 3.5vh;
+  top: 18.5vh;
+}
+
+
+#load2
+{
+  border-right: 12px solid yellow;
+  border-left: 12px solid yellow;
+  border-bottom: 12px solid yellow;
+  border-top: 12px solid;
+}
+
+#load2-txt
+{
+  color: whitesmoke;
+  position: relative;
+  left: 5vh;
+  top: 18.5vh;
+
+}
+
+#load3
+{
+  border-right: 12px solid yellow;
+  border-left: 12px solid yellow;
+  border-bottom: 12px solid yellow;
+  border-top: 12px solid;
+ 
+}
+
+#load3-txt
+{
+  color: whitesmoke;
+  left: -1vh;
+  top: 19vh;
+  position: relative;
+
+}
+
+
+#load4 , #load5
+{
+  border-right: 12px solid yellow;
+  border-left: 12px solid yellow;
+  border-bottom: 12px solid yellow;
+  border-top: 12px solid yellow;
+}
+
+#load4-txt
+{
+  color: whitesmoke;
+  position: relative;
+  left: -1vh;
+  top: 19vh;
+}
+
+#load5-txt
+{
+  color: whitesmoke;
+  position: relative;
+  left: -1vh;
+  top: 19vh;
+
+}
+
+#load6
+{
+  border-bottom: 12px solid yellow;
+  border-right: 12px solid;
+  border-left: 12px solid;
+  border-top: 12px solid;
+}
+
+#load6-txt
+{
+  color: whitesmoke;
+  position: relative;
+  left: 2vh;
+  top: 19vh;
+
+
+}
+
+#load7 , #load8
+{
+  display: none;
+}
+
+
+
+
+.percent{
+font-size: 29px;
+text-decoration: none;
+position: relative;
+top: 0vh;
+left: 3.5vh;
+color: whitesmoke;
+}
+
+.skills-div-2
+{
+  display: flex;
+  flex-direction:row;
+flex-wrap: wrap;
+margin-top: 2vh;
+}
+
+
+
+#like-btn {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    background-color: black;
+    border: 3px solid yellow;
+    color: whitesmoke;
+    margin-left: -2vh;
+}
+.like-btn
+{
+  margin-top: 0.6vh;
+  font-size: 24px;
+}
+
+.modal-hdng-div button
+{
+  background-color: rgb(24,22,22);
+  border: 1px solid rgb(24,22,22);
+  color: yellow;
+  font-size: 34px;
+  position: relative;
+  left: 23vh;
+  top: 3vh;
+  margin-left: 24vh;
+}
+
+
+
+.fa-house, .fa-user, .fa-briefcase, .fa-envelope-open, .fa-comments {
+  font-size: 22px;
+  font-weight: 800;
+}
+
+
+
+
+
+
+
+
+
+
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<style>
+
+body{
+  margin: 0%;
+
+}
+
+.card
+{
+  border: 1px solid black;
+  height: 200px;
+  /* background-image: url(./portfolio/patrona\ pic.PNG); */
+  width: 300px;
+margin-left: 200px;
+margin-top: 200px;
+
+
+}
+#txt
+{
+  border: 1px solid black;
+  height: 200px;
+  /* background-image: url(./portfolio/patrona\ pic.PNG); */
+  width: 300px;
+margin-left: 200px;
+
+
+
+}
+
+
+</style>
+
+
+<body>
+  
+
+<div class="card" >
+
+  <img src="./portfolio/patrona pic.PNG" alt="loading." onmouseenter="up()" onmouseout="down()">
+
+
+</div>
+
+<div id="txt">
+  <h1>hello</h1>
+  <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi asperiores accusamus id ad adipisci veritatis aspernatur suscipit. Obcaecati, nemo facere?</p>
+</div>
+
+
+</body>
+</html>
+
+
+<script>
+
+function up()
+{
+  var div = document.getElementById("txt");
+  div.style.marginTop="-200px";
+}
+
+function down()
+{
+  var div = document.getElementById("txt");
+  div.style.marginTop="200px";
+  div.style.backgroundColor="black";
+
+}
+
+</script>

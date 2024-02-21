@@ -4,17 +4,117 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="./blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/regular.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/solid.min.css"
+        integrity="sha512-pZlKGs7nEqF4zoG0egeK167l6yovsuL8ap30d07kA5AJUq+WysFlQ02DLXAmN3n0+H3JVz5ni8SJZnrOaYXWBA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Protest+Riot&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/regular.min.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    
+
+    <link rel="stylesheet" href="./contact.css">
 </head>
 <body>
-    <br><br><br>
+ 
+
+<div class="col-lg-12 col-xl-12 col-xxl-12 col-md-12 col-sm-12 col-12 main-hdng ">
+
+    <h1 class="bg-hdng">Contact</h1>
+    <h1 id="title-about">GET-IN</h1><span id="me">TOUCH</span>
+
+</div>
+<br>
+<div class="col-lg-12 col-xl-12 col-xxl-12 col-md-12 col-sm-12 col-xs-12  contact-main-div">
+
+<div class="details-div col-lg-4 col-xl-4 col-xxl-4 col-md-4 col-sm-12 col-12">
+    <h1 id="shy-txt" class="col-lg-12 col-xl-12 col-xxl-12 col-md-12 col-sm-12 col-12">DON'T BE SHY</h1>
     
-    <marquee behavior="" direction="">
+    <p class="col-12" id="dynamic-para">Lorem ipsum dolor sit amet consectetur adipisicing elit. At quas sunt vel deleniti asperiores quod, quo officia reiciendis dolorem, blanditiis omnis. Ullam quod rerum, possimus numquam doloremque mollitia quisquam quae.</p>
 
-    <h1>Upcoming!!</h1>
+    <div class="col-lg-12 col-xl-12 col-xxl-12 col-md-12 col-sm-12 col-12 address-div">
+<span><i class="fa-solid fa-map-location icons"></i></i></span> <span class="details-hdng">ADDRESS POINT</span>
+<b><p class="details-txt">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ut facilis modi incidunt animi repellat provident</p></b>
+    </div>
 
-    </marquee>
+    <div class="col-lg-5 col-md-5 col-xl-5 col-xxl-5 col-sm-12 col-12 mail-div">
+<span><i class="fa-solid fa-envelope-open icons" ></i></span> <span class="details-hdng">MAIL ME</span>
+<b><p class="details-txt">hasnainabdulsamad223@gmail.com</p></b>
+    </div>
+
+
+    <div class="col-lg-4 col-md-4 col-xl-4 col-xxl-4 col-sm-12 col-12 call-div">
+<span><i class="fa-solid fa-square-phone icons"></i></span> <span class="details-hdng">CALL ME</span>
+<b><p class="details-txt">0332-9259219</p></b>
+    </div>
+
+
+<div class="btn_wrap col-lg-12 col-xl-12 col-xxl-12 col-md-12 col-sm-12 col-12">
+    <span id="share">Share</span>
+    <div class="container icons-div">
+        <a href="#"><i class="fab fa-facebook-f socials"></i></a>
+        <a href="#"><i class="fab fa-twitter socials"></i></a>
+        <a href="#"><i class="fab fa-instagram socials"></i></a>
+       <a href="#"><i class="fab fa-github socials"></i></a>
+    </div>
+</div>
+
+
+</div>
+
+<div class="col-lg-8  col-xl-8 col-xxl-8 col-md-8 col-sm-12 col-xs-12
+ cont-form-div">
+
+    <form action="" autocomplete="on"></form>
+<input type="text"  name="Fname" id="username" placeholder="Your Name...." size="30" autocapitalize="on" required>
+<input type="email" name="Email" id="useremail"  placeholder="Your Email.." size="30" required>
+<br><br>
+<input type="text" name="Subject" id="usersubject"  placeholder="Your Subject"  autocapitalize="on" required>
+<br><br>
+<textarea name="Msg"  cols="30" rows="10"  id="usercomments" placeholder="YOUR MESSAGE" autocapitalize="on" required></textarea> 
+<br><br>
+
+ 
+<button id="btn" class="submit-btn" onclick="checkvalue()">
+    <p id="btnText">Submit</p>
+    <div class="check-box">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 50 50">
+            <path fill="transparent" d="M14.1 27.2l7.1 7.2 16.7-16.8" />
+        </svg>
+    </div>
+</button> 
+<br><br><br>
+</div>
+
+</div>
+
+
+<div class="col-lg-1 col-md-1 col-xl-1 col-xxl-1 col-sm-12 col-xs-12  sidebar">
+
+
+    <a href="" class="link-btns" onclick="toggleBulb(); changetheme()"><i class="fa-regular fa-lightbulb bulbof"></i><i class="fa-solid fa-lightbulb bulbon"></i></a>
+  
+    <a href="" class="link-btns"><i class="fa-solid fa-house"></i></a>
+    <a href="" class="link-btns"><i class="fa-solid fa-user"></i></a>
+    <a href="" class="link-btns"><i class="fa-solid fa-briefcase"></i></a>
+    <a href="" class="link-btns"><i class="fa-solid fa-envelope-open"></i></a>
+    <a href="" class="link-btns"><i class="fa-solid fa-comments"></i></a>
+  
+  
+  
+  
+  
+  </div>
+
+
 
 
 </body>
 </html>
+
+<script src="./contact.js"></script>

@@ -110,12 +110,52 @@ function showlike()
 alert("Thanks for like");
 }
 
+function sidebarWidth() {
+  var screenWidth = window.innerWidth;
+  var sidebar = document.querySelector(".sidebar");
+  sidebar.style.width = screenWidth + 'px';
+  var shortbio = document.querySelector(".short-bio");
+  shortbio.style.width = screenWidth - 1 + 'px';
+  var bio = document.getElementById("bio")
+  bio.style.maxWidth = screenWidth - 10 + 'px';
+}
+function changewidths()
+{
+
+if (window.innerWidth <= 767 && window.innerWidth >= 320) {
+  sidebarWidth();
+} else {
+  // Optionally, you can add code here for larger screens
+}
+}
 
 
+window.onload = changewidths();
 
+function sidebarheight()
+{
+  
+  var screenheight = window.innerHeight;
+var sidebar = document.querySelector(".sidebar");
 
+sidebar.style.marginTop = screenheight - 100 + 'px';
+}
 
+function changeheight()
+{
 
+if(window.innerWidth >= 768 && window.innerWidth <= 1024)
+{
+sidebarheight()
+}
+
+else
+{
+
+}
+}
+
+window.onload = changeheight();
 
 
 

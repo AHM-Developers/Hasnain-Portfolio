@@ -17,6 +17,12 @@ body
 /* main hdng styling */
 
 
+.main-div
+{
+  display: flex;
+    flex-wrap: wrap;
+}
+
 .main-hdng
 {
   height:156px;

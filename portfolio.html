@@ -1,0 +1,1142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hasnain Portfolio</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" integrity="sha512-UJfAaOlIRtdR+0P6C3KUoTDAxVTuy3lnSXLyLKlHYJlcSU8Juge/mjeaxDNMlw9LgeIotgz5FP8eUQPhX1q10A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+<style>
+
+:root {
+	/* ----------------------------------
+   @font family declaration
+  ------------------------------------ */
+	--tj-ff-body: "Sora", sans-serif;
+	--tj-ff-heading: "Sora", sans-serif;
+	--tj-ff-russo: "Russo One", sans-serif;
+	--tj-ff-fontawesome: "Font Awesome 6 Pro";
+	/* ----------------------------------
+   @color declaration
+  ------------------------------------ */
+	--tj-body: #dddddd;
+	--tj-white: #ffffff;
+	--tj-off-white: #f6f3fc;
+	--tj-black: #000000;
+	--tj-black-2: #050709;
+	--tj-black3: #5c6266;
+	--tj-black4: #585859;
+	--tj-h3-black: #0B0410;
+	--tj-heading-primary: #102039;
+	--tj-heading-secondary: #ea1826;
+	--tj-theme-primary: #8750f7;
+	--tj-theme-primary-1: #2400ff;
+	--tj-theme-primary-2: #9b8dff;
+	--tj-theme-primary-3: #4654f9;
+	--tj-theme-h3-primary: #7343D2;
+	--tj-theme-h3-primary-1: #814CEC;
+	--tj-theme-secondary: #2a1454;
+	--tj-theme-accent-1: #0f0715;
+	--tj-theme-accent-2: #140c1c;
+	--tj-grey-1: #747779;
+	--tj-grey-2: #d9d9d9;
+	--tj-grey-3: #dddddd;
+	--tj-grey-4: #22272c;
+	--tj-grey-5: #636363;
+	--tj-grey-6: #1b262e;
+	--tj-bg: #0c1115;
+	--tj-bg-2: #0e1418;
+	--tj-bg-3: #10171c;
+	--tj-bg-4: #151b1f;
+	--tj-h3-bg: #15091D;
+	--tj-border: #1b2227;
+	--tj-border1: #2a343c;
+	/* ----------------------------------
+   @font weight declaration
+  ------------------------------------ */
+	--tj-fw-normal: normal;
+	--tj-fw-elight: 200;
+	--tj-fw-light: 300;
+	--tj-fw-regular: 400;
+	--tj-fw-medium: 500;
+	--tj-fw-sbold: 600;
+	--tj-fw-bold: 700;
+	--tj-fw-ebold: 800;
+	--tj-fw-black: 900;
+	/* ----------------------------------
+    @font size declaration
+  ------------------------------------ */
+	--tj-fz-body: 16px;
+	--tj-fz-btn: 15px;
+	--tj-fz-p: 18px;
+	--tj-fz-h1: 65px;
+	--tj-fz-h2: 45px;
+	--tj-fz-h3: 30px;
+	--tj-fz-h4: 24px;
+	--tj-fz-h5: 22px;
+	--tj-fz-h6: 18px;
+	--tj-fz-sub-title: 36px;
+}
+
+body
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first-section
+{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    height: auto;
+    border: 3px dashed peru;
+    background-color: linear-gradient( #0f0715 , purple);
+}
+.maintxt-div
+{
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: start;
+    border: 2px solid blue;
+    background-color: linear-gradient( #0f0715 , purple);
+
+}
+.maintxt-txt
+{
+    display: flex;
+    flex-direction: column;
+    
+}
+.maintxt-buttons
+{
+    display: flex;
+    justify-content: space-around;
+    
+}
+.maintxt-image
+{
+    display: flex;
+    height: 600px;
+    border: 2px solid black;
+    justify-content: space-around;
+    align-items: center;
+
+
+}
+.myimg-card {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    transform: rotate(7deg);
+    height: 550px;
+    border: 5px solid purple;
+    border-radius: 16px;
+    transition: ease-in-out .3s;
+}
+.myimg-card:hover
+{
+    transform: rotate(0deg);
+    transition: ease-in-out .3s;
+}
+.myimg-card img
+{
+    height: 500px;
+}
+
+.counters-div {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: auto;
+    border: 1px solid purple;
+flex-wrap: wrap;
+}
+.counter 
+{
+    height: 200px;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.counter h2 
+{
+    font-size: 3.5em;
+}
+
+.counter:nth-child(1) h4
+{
+    max-width: 50%;
+    font-size: 1.7rem;
+}
+.counter h4 
+{
+    font-size: 1.7rem;
+}
+     /* skills section  */
+     /* .skills-section {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            height: auto;
+            border: 2px solid purple;
+            align-items: center;
+        } */
+
+        /* .skills-hdngdiv {
+            display: flex;
+            flex-direction: column;
+            height: 150px;
+            justify-content: center;
+            align-items: center;
+        } */
+      
+
+        /* .skills {
+          width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    gap: 0px;
+    flex-wrap: wrap;
+
+  > div {
+    height:420px;
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("./one-person-typing-computer-keyboard-night-generated-by-ai.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(2) {
+        background: url("./one-person-typing-computer-keyboard-night-generated-by-ai.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(3) {
+        background: url("./one-person-typing-computer-keyboard-night-generated-by-ai.jpg")
+        no-repeat 50% / cover;
+    }
+    &:nth-of-type(4) {
+        background: url("./one-person-typing-computer-keyboard-night-generated-by-ai.jpg")
+        no-repeat 50% / cover;
+    }
+
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(
+        0deg,
+        rgba(2, 2, 46, 0.6755077030812324) 0%,
+        rgba(255, 255, 255, 0) 100%
+      );
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #7645d8;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+} */
+
+.skills-section {
+    padding-top: 120px;
+    padding-bottom: 120px;
+    /* background: var(--tj-theme-accent-1); */
+}
+
+.skills-section .container
+{
+  --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-right: auto;
+    margin-left: auto;
+}
+.skills-section .container .row 
+{
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: calc(-1* var(--bs-gutter-y));
+    margin-right: calc(-.5* var(--bs-gutter-x));
+    margin-left: calc(-.5* var(--bs-gutter-x));
+}
+.row>* {
+    flex-shrink: 0;
+    width: 100%;
+    max-width: 100%;
+    padding-right: calc(var(--bs-gutter-x)* .5);
+    padding-left: calc(var(--bs-gutter-x)* .5);
+    margin-top: var(--bs-gutter-y);
+}
+.skills-section .section-header {
+    margin-left: auto;
+    margin-right: auto;
+}
+.section-header {
+    margin-bottom: 50px;
+    max-width: 700px;
+    width: 100%;
+}
+.skills-widget {
+    gap: 20px;
+    row-gap: 30px;
+}
+.align-items-center {
+    align-items: center !important;
+}
+.justify-content-center {
+    justify-content: center !important;
+}
+.flex-wrap {
+    flex-wrap: wrap !important;
+}
+.d-flex {
+    display: flex !important;
+}
+.skills-widget .skill-item {
+    max-width: 180px;
+    width: 100%;
+    text-align: center;
+}
+.fadeInUp {
+    -webkit-animation-name: fadeInUp;
+    animation-name: fadeInUp;
+}
+.skills-widget .skill-inner {
+    border-radius: 25px;
+    padding: 40px 15px 30px;
+background-color: #102039;
+    border: 1px solid transparent;
+    margin-bottom: 15px;
+    -webkit-transition: 0.6s;
+    -o-transition: 0.6s;
+    transition: 0.6s;
+}
+.skills-widget .skill-item .icon-box {
+    max-width: 60px;
+    width: 100%;
+    margin: 0 auto 30px;
+}
+.skills-widget .skill-item .icon-box img {
+    filter: grayscale(90%);
+    -webkit-filter: grayscale(90%);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+}
+.skills-widget .skill-item .number {
+    color: var(--tj-grey-1);
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 1;
+}
+.skills-widget .skill-item p {
+    color: var(--tj-theme-primary);
+    margin-bottom: 0;
+}
+.skills-widget .skill-item:hover .skill-inner {
+    background: var(--tj-theme-secondary);
+    border: 1px solid var(--tj-theme-primary);
+}
+
+
+/* Resume section */
+.resume-section
+{
+  display: flex;
+  justify-content:space-around;
+  flex-wrap: wrap;
+  height: 800px;
+
+
+}
+.experience-div 
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 750px;
+  flex-direction: column;
+  border: 2px solid purple;
+}
+.expe-content  , .edu-content
+{
+  border: 1px solid purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    height: 115px;
+    border-radius: 3px;
+    padding-left: 25px;
+    box-shadow: 2px 2px 7px;
+}
+
+
+.education-div 
+{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 750px;
+  flex-direction: column;
+  border: 2px solid purple;
+}
+
+
+
+.projects-section
+{
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+}
+.projecttypes-btn
+{
+  height: 60px;
+  border: 2px solid purple;
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+.projecttypes-btn button
+{    width: 22%;
+    font-size: 1.2em;
+    font-weight: bold;
+    height: 80%;
+    border-radius: 20px;
+    border: 2px solid blue;
+background-color: white;
+
+}
+
+
+.wrapper {
+  display: flex;
+  width: 90%;
+margin-top: 3%;;
+  justify-content: space-around;
+}
+
+.card {
+  width: 280px;
+  height: 360px;
+  border-radius: 15px;
+  padding: 1.5rem;
+  background-color: white;
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.4s ease-out, box-shadow 0.4s ease-out;
+  box-shadow: 0px 7px 10px rgba(0, 0, 0, 0.5);
+
+  &:hover {
+    transform: translateY(20px);
+
+    &:before {
+      opacity: 1;
+    }
+
+    .info {
+      opacity: 1;
+      transform: translateY(0px);
+    }
+  }
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.6);
+    z-index: 2;
+    transition: opacity 0.5s;
+    opacity: 0;
+  }
+
+  img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 15px;
+  }
+
+  .info {
+    position: relative;
+    z-index: 3;
+    color: white;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity 0.5s, transform 0.5s;
+
+    h1 {
+      margin: 0;
+    }
+
+    p {
+      letter-spacing: 1px;
+      font-size: 15px;
+      margin-top: 8px;
+    }
+
+    button {
+      padding: 0.6rem;
+      outline: none;
+      border: none;
+      border-radius: 3px;
+      background-color: white;
+      color: black;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background-color 0.4s ease, color 0.4s ease;
+
+      &:hover {
+        background-color: dodgerblue;
+        color: white;
+      }
+    }
+  }
+}
+
+.contact-section
+{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.contact-formdiv
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border:2px solid  #102039;
+  height: 350px;
+}
+.details-div
+{
+  border: 2px solid #102039;
+  height: 350px;
+}
+
+form
+{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  height: 300px;
+}
+
+form input 
+{
+  width: 40%;
+  height: 30px;
+}
+form textarea
+{
+  width: 90%;
+}
+.submit-btn
+{
+  width: 23%;
+    height: 40px;
+    border: 2px solid purple;
+    border-radius: 20px;
+    background: white;
+    color: purple;
+    font-weight: bold;
+    font-size: 1.1em;
+    margin-top: 20px;
+
+}
+.details-div
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.details-subdiv
+{
+  display: flex;
+  justify-content: space-around;
+}
+.subdiv1
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  border: 1px solid black;
+width: 10%;
+}
+.subdiv2
+{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+}
+
+
+
+/* Small mobile devices (landscape and portrait) */
+@media (max-width: 575.98px) {
+  /* Styles for small mobile devices */
+  .counter h2 
+{
+    font-size: 2.5em;
+}
+
+.counter:nth-child(1) h4
+{
+    max-width: 50%;
+    font-size: 1.2rem;
+}
+.counter h4 
+{
+    font-size: 1.2rem;
+}
+/* .skills
+{
+  width: 80%;
+    display: flex;
+    justify-content: space-evenly;
+    height: 1025px;
+    gap: 0px;
+    flex-wrap: wrap;
+    flex-direction: column;
+    >div {
+    height:420px;
+    flex: -1 0 250px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+}
+
+} */
+.skills-section .container {
+  max-width: 80%;
+}
+
+/* Large mobile devices (landscape and portrait) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  /* Styles for large mobile devices */
+  .skills-section .container {
+  max-width: 540;
+}
+}
+
+/* Tablets (portrait) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  /* Styles for tablets in portrait mode */
+  .skills-section .container {
+  max-width: 720px;
+}
+}
+
+/* Tablets (landscape) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  /* Styles for tablets in landscape mode */
+  .skills-section .container {
+  max-width: 960px;
+}
+}
+/* Small laptops */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+  /* Styles for small laptops */
+  .skills-section .container {
+  max-width: 1140px;
+}
+}
+
+/* Large laptops */
+@media (min-width: 1400px) and (max-width: 1599.98px) {
+  /* Styles for large laptops */
+  .skills-section .container {
+  max-width: 1320px;
+}
+}
+}
+/* Desktops and larger screens */
+@media (min-width: 1600px) {
+  /* Styles for desktops and larger screens */
+}
+
+
+</style>
+
+
+</head>
+<body>
+    
+<main>
+
+<section class="col-lg-12 col-md-12 col-xl-12 col-xxl-12 col-sm-12 col-12 first-section">
+
+<div class="maintxt-div col-lg-6 col-md-6 col-xl-6 col-xxl-6 col-sm-12 col-12">
+
+<div class="maintxt-txt col-lg-12 col-md-12 col-xl-12 col-xxl-12 col-sm-12 col-12">
+    <h3>I am Hasnain A.Samad</h3>
+    <h1>Full Stack Developer + </h1>
+<h1>UX Designer</h1>
+<h5>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio alias minima deserunt, quibusdam enim ullam quisquam repellendus exercitationem doloremque nam.</h5>
+
+</div>
+<div class= "maintxt-buttons col-lg-12 col-md-12 col-xl-12 col-xxl-12 col-sm-12 col-12">
+<a href="">Download CV</a> <a href="">fb</a><a href="">insta</a><a href="">git</a><a href="">in</a>
+
+</div>
+</div>
+
+<div class="maintxt-image col-lg-6 col-md-6 col-xl-6 col-xxl-6 col-sm-12 col-12">
+<div class="myimg-card col-lg-8 col-md-8 col-sm-10 col-xl-8 col-xxl-8 col-10">
+    <img src="./832.jpg" alt="" height="200px" width="90%">
+</div>
+
+</div>
+
+<div class="counters-div col-lg-12 col-md-12 col-xl-12 col-xxl-12 col-sm-12 col-12">
+    
+    <div class="counter col-lg-3 col-md-3 col-xl-3 col-xxl-3 col-sm-6 col-6">
+        <h2 id="experience-counter">0</h2><h4>Years Of Experience</h4>
+    </div>
+    
+    <div class="counter col-lg-3 col-md-3 col-xl-3 col-xxl-3 col-sm-6 col-6">
+        <h2 id="project-counter">0 </h2><h4> Project Created</h4>
+    </div>
+    
+    <div class="counter col-lg-3 col-md-3 col-xl-3 col-xxl-3 col-sm-6 col-6">
+        <h2 id="followers-counter">0</h2><h4>Followers</h4>
+    </div>
+    
+
+</div>
+
+
+
+
+
+</section>
+ <!-- SKILLS SECTION START -->
+ <section class="skills-section" id="skills-section">
+  <div class="container">
+     <div class="row">
+        <div class="col-md-12">
+           <div class="section-header text-center">
+              <h2 class="section-title wow fadeInUp" data-wow-delay=".3s">My Skills</h2>
+              <p class="wow fadeInUp" data-wow-delay=".4s">
+                 We put your ideas and thus your wishes in the form of a unique web project that inspires you and
+                 you customers.
+              </p>
+           </div>
+        </div>
+     </div>
+
+     <div class="row">
+        <div class="col-md-12">
+           <div class="skills-widget d-flex flex-wrap justify-content-center align-items-center">
+              <div class="skill-item wow fadeInUp" data-wow-delay=".3s">
+                 <div class="skill-inner">
+                    <div class="icon-box">
+                       <img src="assets/img/icons/figma.svg" alt="" />
+                    </div>
+                    <div class="number">92%</div>
+                 </div>
+                 <p>Figma</p>
+              </div>
+              <div class="skill-item wow fadeInUp" data-wow-delay=".4s">
+                 <div class="skill-inner">
+                    <div class="icon-box">
+                       <img src="assets/img/icons/sketch.svg" alt="" />
+                    </div>
+                    <div class="number">80%</div>
+                 </div>
+                 <p>Sketch</p>
+              </div>
+              <div class="skill-item wow fadeInUp" data-wow-delay=".5s">
+                 <div class="skill-inner">
+                    <div class="icon-box">
+                       <img src="assets/img/icons/xd.svg" alt="" />
+                    </div>
+                    <div class="number">85%</div>
+                 </div>
+                 <p>XD</p>
+              </div>
+              <div class="skill-item wow fadeInUp" data-wow-delay=".6s">
+                 <div class="skill-inner">
+                    <div class="icon-box">
+                       <img src="assets/img/icons/wp.svg" alt="" />
+                    </div>
+                    <div class="number">99%</div>
+                 </div>
+                 <p>WordPess</p>
+              </div>
+              <div class="skill-item wow fadeInUp" data-wow-delay=".7s">
+                 <div class="skill-inner">
+                    <div class="icon-box">
+                       <img src="assets/img/icons/react.svg" alt="" />
+                    </div>
+                    <div class="number">89%</div>
+                 </div>
+                 <p>React</p>
+              </div>
+              <div class="skill-item wow fadeInUp" data-wow-delay=".8s">
+                 <div class="skill-inner">
+                    <div class="icon-box">
+                       <img src="assets/img/icons/js.svg" alt="" />
+                    </div>
+                    <div class="number">93%</div>
+                 </div>
+                 <p>JavaScript</p>
+              </div>
+           </div>
+        </div>
+     </div>
+  </div>
+</section>
+<!-- SKILLS SECTION END -->
+
+
+<section class="col-lg-12 col-md-12 col-xl-12 col-xxl-12 col-12 col-sm-12 resume-section">
+
+<div class="col-lg-6 col-md-6 col-xl-6 col-xxl-6 col-sm-6 col-6 experience-div">
+  <h1>My Experience</h1>
+  <div class="expe-content col-lg-10 col-md-10 col-sm-10 col-xl-10 col-xxl-10 col-10">
+    <h3>2022 - Present</h3>
+    <h2>Lead Developer</h2>
+    <h6>Karachi , Pakistan</h6>
+  </div>
+  <div class="expe-content col-lg-10 col-md-10 col-sm-10 col-xl-10 col-xxl-10 col-10">
+    <h3>2022 - Present</h3>
+    <h2>Lead Developer</h2>
+    <h6>Karachi , Pakistan</h6>
+  </div>
+  <div class="expe-content col-lg-10 col-md-10 col-sm-10 col-xl-10 col-xxl-10 col-10">
+    <h3>2022 - Present</h3>
+    <h2>Lead Developer</h2>
+    <h6>Karachi , Pakistan</h6>
+  </div>
+  <div class="expe-content col-lg-10 col-md-10 col-sm-10 col-xl-10 col-xxl-10 col-10">
+    <h3>2022 - Present</h3>
+    <h2>Lead Developer</h2>
+    <h6>Karachi , Pakistan</h6>
+  </div>
+  
+
+
+
+</div>
+
+<div class="col-lg-6 col-md-6 col-xl-6 col-xxl-6 col-sm-6 col-6 education-div">
+<h1>My Education</h1>
+  <div class="edu-content col-lg-10 col-md-10 col-sm-10 col-xl-10 col-xxl-10 col-10">
+    <h3>2022 - Present</h3>
+    <h2>Lead Developer</h2>
+    <h6>Karachi , Pakistan</h6>
+  </div>
+  <div class="edu-content col-lg-10 col-md-10 col-sm-10 col-xl-10 col-xxl-10 col-10">
+    <h3>2022 - Present</h3>
+    <h2>Lead Developer</h2>
+    <h6>Karachi , Pakistan</h6>
+  </div>
+  <div class="edu-content col-lg-10 col-md-10 col-sm-10 col-xl-10 col-xxl-10 col-10">
+    <h3>2022 - Present</h3>
+    <h2>Lead Developer</h2>
+    <h6>Karachi , Pakistan</h6>
+  </div>
+  <div class="edu-content col-lg-10 col-md-10 col-sm-10 col-xl-10 col-xxl-10 col-10">
+    <h3>2022 - Present</h3>
+    <h2>Lead Developer</h2>
+    <h6>Karachi , Pakistan</h6>
+  </div>
+  
+
+
+</div>
+
+
+
+</section>
+
+<br><br>
+<section class="col-lg-12 col-md-12 col-xl-12 col-xxl-12 col-12 col-sm-12 projects-section">
+  
+  <div class="section-header text-center">
+    <h2 class="section-title wow fadeInUp" data-wow-delay=".3s">My Projects</h2>
+    <p class="wow fadeInUp" data-wow-delay=".4s">
+       We put your ideas and thus your wishes in the form of a unique web project that inspires you and
+       you customers.
+    </p>
+ </div>
+
+ <div class="col-lg-4 col-md-4 col-xl-4 col-xxl-4 col-sm-5 col-5 projecttypes-btn">
+
+<button type="button">xyz</button>
+<button type="button">xyz</button>
+<button type="button">xyz</button>
+<button type="button">xyz</button>
+ </div>
+
+ <div class="wrapper">
+  <div class="card">
+      <img src="https://images.unsplash.com/photo-1477666250292-1419fac4c25c?auto=format&fit=crop&w=667&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="">
+      <div class="info">
+          <h1>Mountain</h1>
+          <p>Lorem Ipsum is simply dummy text from the printing and typesetting industry</p>
+          <button>Read More</button>
+      </div>
+  </div>
+
+  <div class="card">
+      <img src="https://images.unsplash.com/photo-1425342605259-25d80e320565?auto=format&fit=crop&w=750&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="">
+      <div class="info">
+          <h1>Road</h1>
+          <p>Lorem Ipsum is simply dummy text from the printing and typesetting industry</p>
+          <button>Read More</button>
+      </div>
+  </div>
+
+  <div class="card">
+      <img src="https://images.unsplash.com/photo-1503249023995-51b0f3778ccf?auto=format&fit=crop&w=311&q=80&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D" alt="">
+      <div class="info">
+          <h1>Protester</h1>
+          <p>Lorem Ipsum is simply dummy text from the printing and typesetting industry</p>
+          <button>Read More</button>
+      </div>
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+<br><br><br>
+
+<section class="col-lg-12 col-md-12 col-xl-12 col-xxl-12 col-12 col-sm-12 contact-section">
+
+<div class="contact-formdiv col-lg-6 col-xl-6 col-xxl-6 col-md-6 col-sm-12 col-12">
+
+<h1>Let's Communicate</h1>
+<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, vel.</p>
+
+<form action="">
+
+<input type="text" name="" id="">
+<input type="text" name="" id="">
+<input type="text" name="" id="">
+<input type="text" name="" id="">
+<textarea name="" id=""></textarea>
+
+  <button type="submit" class="submit-btn">Submit</button>
+
+
+</form>
+
+</div>
+
+
+<div class="details-div col-lg-6 col-xl-6 col-xxl-6 col-md-6 col-sm-12 col-12">
+
+
+  <div class="container details-subdiv">
+
+    <div class="container subdiv1">
+    
+      <script src="https://cdn.lordicon.com/lordicon.js"></script>
+      <lord-icon
+          src="https://cdn.lordicon.com/srsgifqc.json"
+          trigger="hover"
+          style="width:40px;height:45px">
+      </lord-icon>
+    
+    </div>
+    <div class="container subdiv2">
+      <h6>hasnain</h6>
+      <p>Lorem, ipsum.</p>
+    </div>
+    
+    </div>
+
+<div class="container details-subdiv">
+
+  <div class="container subdiv1">
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+    <lord-icon
+        src="https://cdn.lordicon.com/xtzvywzp.json"
+        trigger="loop"
+        delay="2500"
+        style="width:250px;height:250px">
+    </lord-icon>
+  
+  </div>
+  <div class="container subdiv2">
+    <h6>hasnain</h6>
+    <p>Lorem, ipsum.</p>
+  </div>
+  
+  </div>
+  
+  
+<div class="container details-subdiv">
+
+  <div class="container subdiv1">
+  
+    <script src="https://cdn.lordicon.com/lordicon.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/iikoxwld.json"
+    trigger="loop"
+    delay="2000"
+    style="width:100px;height:100px">
+</lord-icon>
+  
+  </div>
+  <div class="container subdiv2">
+    <h6>hasnain</h6>
+    <p>Lorem, ipsum.</p>
+  </div>
+  
+  </div>
+
+
+</div>
+
+
+
+</section>
+
+
+
+<br><br><br><br><br>
+
+
+
+
+
+</main>
+
+
+
+
+
+</body>
+</html><!-- Scripts -->
+ <!-- Scripts -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+<script>
+function updateExperienceCounter() {
+            const finalExp = 10; // Final value (replace with actual data retrieval)
+            let currentExp = 0; // Initial value
+            const increment = 1; // Increment step
+
+            // Interval function to increment counter gradually
+            const interval = setInterval(function() {
+                document.getElementById('experience-counter').textContent = currentExp;
+                currentExp += increment;
+
+                // Stop interval when final value is reached
+                if (currentExp > finalExp) {
+                    clearInterval(interval);
+                    document.getElementById('experience-counter').textContent = finalExp;
+                }
+            }, 100); // Interval speed (adjust as needed)
+        }
+
+        // Function to update project counter
+        function updateProjectCounter() {
+            const finalProjects = 12; // Final value (replace with actual data retrieval)
+            let currentProjects = 0; // Initial value
+            const increment = 1; // Increment step
+
+            // Interval function to increment counter gradually
+            const interval = setInterval(function() {
+                document.getElementById('project-counter').textContent = currentProjects;
+                currentProjects += increment;
+
+                // Stop interval when final value is reached
+                if (currentProjects > finalProjects) {
+                    clearInterval(interval);
+                    document.getElementById('project-counter').textContent = finalProjects;
+                }
+            }, 100); // Interval speed (adjust as needed)
+        }
+
+        // Function to update follower counter
+        function updateFollowerCounter() {
+            const finalFollowers = 1000; // Final value (replace with actual data retrieval)
+            let currentFollowers = 0; // Initial value
+            const increment = 10; // Increment step
+
+            // Interval function to increment counter gradually
+            const interval = setInterval(function() {
+                document.getElementById('followers-counter').textContent = currentFollowers;
+                currentFollowers += increment;
+
+                // Stop interval when final value is reached
+                if (currentFollowers > finalFollowers) {
+                    clearInterval(interval);
+                    document.getElementById('followers-counter').textContent = finalFollowers;
+                }
+            }, 50); // Interval speed (adjust as needed)
+        }
+
+        // Call update functions when the page loads to start counting
+        updateExperienceCounter();
+        updateProjectCounter();
+        updateFollowerCounter();
+</script>
